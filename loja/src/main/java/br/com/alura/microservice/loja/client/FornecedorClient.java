@@ -17,6 +17,6 @@ public interface FornecedorClient {
 	@RequestMapping("/info/{estado}")
 	InfoFornecedorDTO getInfoPorEstado(@PathVariable String estado);
 
-	@RequestMapping(method=RequestMethod.POST, value="/pedido")
+	@RequestMapping(method = RequestMethod.POST, value="/pedido")
 	InfoPedidoDTO realizaPedido(List<ItemDaCompraDTO> itens);
 }
